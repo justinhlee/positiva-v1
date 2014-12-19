@@ -1,0 +1,191 @@
+body {
+	font-family: 'Lato';
+	font-weight: 300;
+}
+
+.noscroll {
+	overflow: hidden
+}
+
+.content {
+	margin-top: 75px;
+}
+
+.overlay {
+	display: none;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	background-color: black;
+	opacity: 0.8;
+	height: 100%;
+	width: 100%;
+	z-index: 1000;
+	overflow: hidden;
+	overflow-y: scroll;
+}
+
+.nav {
+	background-color: rgba(0,0,0,0.5);
+	color: white;
+	padding-top: 15px;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	z-index: 100;
+}
+
+.nav a {
+	text-decoration: none;
+	color: white;
+}
+
+#login {
+	background: url('../login.jpg') no-repeat center center fixed;
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+  	z-index: -1;
+}
+.create-outer {
+	position: absolute;
+	left: 50%;
+}
+
+.create {
+	position: relative;
+	display: none;
+	margin-top: 30px;
+	background-color: white;
+	border-radius: 8px;
+	border: 1px solid #eee;
+	height: 500px;
+	width: 500px;
+	left: -50%;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 20px;
+	z-index: 1001;
+	overflow: scroll;
+	-webkit-animation: fadein 1s; 
+       -moz-animation: fadein 1s; 
+        -ms-animation: fadein 1s; 
+         -o-animation: fadein 1s; 
+            animation: fadein 1s;
+}
+
+#create input[type="text"], textarea {
+	height: 10px;
+}
+
+
+#login-prompt {
+	margin-top: 150px;
+	background-color: white;
+	border-radius: 8px;
+	border: 1px solid #eee;
+	box-shadow: rgba(0,0,0,0.8) 0 0 10px;
+	height: 400px;
+	width: 300px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 20px;
+}
+
+#charts {
+	margin-top: 150px;
+}
+
+.chart{
+	background-color: #fff;
+	border-radius: 8px;
+	border: 1px solid #eee;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 20px;
+	height: 500px;
+	-webkit-animation: fadein 1.4s; 
+       -moz-animation: fadein 1.4s; 
+        -ms-animation: fadein 1.4s; 
+         -o-animation: fadein 1.4s; 
+            animation: fadein 1.4s;
+
+}
+
+#bar1 div, #bar2 div,
+#bar3 div, #bar4 div, 
+#bar5 div, #bar6 div {
+  font: 8px 'Lato', sans-serif;
+  letter-spacing: 0.75px;
+  background-color: #f89801;
+  text-align: left;
+  padding: 2px;
+  margin-bottom: 3px;
+  color: black;
+}
+
+#status {
+	background-color: #fff;
+	border-radius: 8px;
+	border: 1px solid #eee;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 20px;
+	height: 250px;
+	-webkit-animation: fadein 1.4s; 
+       -moz-animation: fadein 1.4s; 
+        -ms-animation: fadein 1.4s; 
+         -o-animation: fadein 1.4s; 
+            animation: fadein 1.4s;
+
+}
+
+#profile {
+	background-color: #fff;
+	border-radius: 8px;
+	border: 1px solid #eee;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 20px;
+	height: 270px;
+	-webkit-animation: fadein 1.4s; 
+       -moz-animation: fadein 1.4s; 
+        -ms-animation: fadein 1.4s; 
+         -o-animation: fadein 1.4s; 
+            animation: fadein 1.4s;
+
+}
+
+#profile a {
+	text-decoration: none;
+	color: black;
+}
+
+.radar-chart .area {
+  fill-opacity: 0.2;
+  fill: #f89801;
+}
+.radar-chart.focus .area {
+  fill-opacity: 0.3;
+}
+.radar-chart.focus .area.focused {
+  fill-opacity: 0.9;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
